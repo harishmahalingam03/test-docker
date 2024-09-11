@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: 270514764245.dkr.ecr.us-east-1.amazonaws.com/aura-postgres:leavetype
+    container_name: my-postgres-container
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
