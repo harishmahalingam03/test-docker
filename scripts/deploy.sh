@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/test-docker 
+cd /home/ubuntu/
 # docker pull 270514764245.dkr.ecr.us-east-1.amazonaws.com/aura-postgres:leavetype
 docker-compose pull
 docker-compose down
